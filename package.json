@@ -4,8 +4,9 @@
   "description": "sample swagger",
   "main": "index.yaml",
   "scripts": {
-    "build-yaml": "multi-file-swagger index.yml -o yaml >dist/api.yml",
-    "build-json": "multi-file-swagger index.yml >dist/api.json",
+    "mkdir-dist": "mkdir -p ./dist",
+    "build-yaml": "npm run mkdir-dist && multi-file-swagger index.yml -o yaml >dist/api.yml",
+    "build-json": "npm run mkdir-dist && multi-file-swagger index.yml >dist/api.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
