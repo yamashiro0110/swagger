@@ -1,0 +1,23 @@
+{
+  "name": "swagger",
+  "version": "0.0.1",
+  "description": "sample swagger",
+  "main": "index.yaml",
+  "scripts": {
+    "build-yaml": "multi-file-swagger index.yml -o yaml >dist/api.yml",
+    "build-json": "multi-file-swagger index.yml >dist/api.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yamashiro0110/swagger.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/yamashiro0110/swagger/issues"
+  },
+  "homepage": "https://github.com/yamashiro0110/swagger#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}
